@@ -1,7 +1,17 @@
 import Vue from 'vue'
 import Controls from '@/components/Controls'
 
+const env = {}
+
 describe('Controls.vue', () => {
+  beforeEach(() => {
+    env.clock = sinon.useFakeTimers()
+  })
+
+  afterEach(() => {
+    env.clock.restore()
+  })
+
   describe('startGame method', () => {
     it('should emit the resetGame event if the timer has stopped', () => {
       const vm = new Vue(Controls).$mount()
@@ -25,7 +35,38 @@ describe('Controls.vue', () => {
 
       expect(vm.stopTimer).to.equal(false)
     })
+
+    it('should set the numbersCalled property', function () {
+      const vm = new Vue(Controls).$mount()
+
+      vm.tickets = [234]
+
+      sinon.stub(vm, 'getNumbers').returns([123, 456])
+
+      vm.startGame()
+      env.clock.tick(1000)
+
+      expect(vm.numberCalled).to.equal(123)
+    })
+
+    it('should emit the updateCalled event if number found', function () {
+      const vm = new Vue(Controls).$mount()
+
+      let emitStub = sinon.stub(vm, '$emit')
+
+      vm.tickets = [
+        [{ number: 1 }]
+      ]
+
+      sinon.stub(vm, 'getNumbers').returns([1])
+
+      vm.startGame()
+      env.clock.tick(1000)
+
+      expect(emitStub.callCount).to.equal(1)
+    })
   })
+
   describe('property change', () => {
     describe('stopTimer property', () => {
       it('should reset started data attribute when the stopTimer data attribute is changed to true', (done) => {
@@ -82,6 +123,7 @@ describe('Controls.vue', () => {
           {number: 1, called: true}
         ]
       })
+
       it('should set stopTimer to true if a bingo ticket has 15 called numbers', (done) => {
         const vm = new Vue(Controls).$mount()
 
