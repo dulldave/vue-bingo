@@ -6,17 +6,10 @@
 </template>
 
 <script>
-export default {
-  /**
-   * ...
-   */
-  name: 'bingoTicketCell',
-
-  /**
-   * ...
-   */
-  props: ['col']
-}
+  export default {
+    name: 'bingoTicketCell',
+    props: ['col']
+  }
 </script>
 
 <style scoped>  
@@ -29,5 +22,7 @@ export default {
 
   table td.called {
     background: red;
+    color: #fff;
+    font-weight: bold;
   }
 </style>

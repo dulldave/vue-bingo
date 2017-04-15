@@ -9,25 +9,16 @@
 </template>
 
 <script>
-import BingoTicket from './BingoTicket'
+  import BingoTicket from './BingoTicket'
 
-export default {
+  export default {
 
-  /**
-   * ...
-   */
-  name: 'bingoStrip',
+    name: 'bingoStrip',
 
-  /**
-   * ...
-   */
-  props: ['tickets'],
+    props: ['tickets'],
 
-  /**
-   * ...
-   */
-  components: {
-    BingoTicket
+    components: {
+      BingoTicket
+    }
   }
-}
 </script>

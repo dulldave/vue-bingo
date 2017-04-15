@@ -1,40 +1,15 @@
 <template>
   <div class="togo">
-    <div class="number">{{toGo}}</div>
+    <div class="number">{{remaining}}</div>
     <div class="text">to go</div>
   </div>
 </template>
 
 <script>
-import _ from 'lodash'
-
-export default {
-  /**
-   * Defines name for component
-   */
-  name: 'toGo',
-
-  /**
-   * Defines the expected props and the types.
-   * Used to validate the code and make sure the
-   * correct data is being passed
-   */
-  props: {
-    ticket: {
-      type: Array,
-      required: true
-    }
-  },
-
-  /**
-   * ...
-   */
-  computed: {
-    toGo () {
-      return 15 - _.filter(this.ticket, { called: true }).length
-    }
+  export default {
+    name: 'toGo',
+    props: ['remaining']
   }
-}
 </script>
 
 <style scoped>
