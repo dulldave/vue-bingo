@@ -77,19 +77,21 @@
 </script>
 
 <style>
+  #app {
+    height: 100vh;
+    display: flex;
+  }
+
   body {
-    background: #a4b357;
-    background: radial-gradient(ellipse at center, #a4b357 0%,#75890c 100%);
+    background: #efefef;
+    margin: 0;
+    padding: 0;
   }
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 </style>

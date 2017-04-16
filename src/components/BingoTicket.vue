@@ -102,7 +102,7 @@
 
   .winner {
     position: absolute;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.6);
     width: 100%;
     height: 100%;
     top: 0;
@@ -114,5 +114,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
   }
 </style>

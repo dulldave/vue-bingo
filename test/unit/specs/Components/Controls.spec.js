@@ -12,6 +12,13 @@ describe('Controls.vue', () => {
     env.clock.restore()
   })
 
+  describe('getNumbers method', () => {
+    it('should return an array of numbers of length 90', () => {
+      const vm = new Vue(Controls).$mount()
+      expect(vm.getNumbers().length).to.equal(90)
+    })
+  })
+
   describe('startGame method', () => {
     it('should emit the resetGame event if the timer has stopped', () => {
       const vm = new Vue(Controls).$mount()

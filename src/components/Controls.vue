@@ -1,7 +1,7 @@
 <template>
   <div class="controls">
     <div class="number-called">{{numberCalled}}</div>
-    <button v-on:click="startGame" v-bind:disabled="started">
+    <button class="btn" v-on:click="startGame" v-bind:disabled="started">
       <span v-if="stopTimer">
         Restart Game
       </span>
@@ -83,7 +83,7 @@
        * Returns a randomly shuffled array of numbers from 1 to 90.
        */
       getNumbers () {
-        return _.shuffle(_.range(1, 90))
+        return _.shuffle(_.range(1, 91))
       }
     },
 
@@ -139,9 +139,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
   }
 
   .number-called {
     font-size: 90px;
+    font-weight: bold;
+  }
+
+  .btn {
+    border: none;
+    background: #008000;
+    padding: 18px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: -1px;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  .btn[disabled="disabled"] {
+    background: #efefef;
+    cursor: not-allowed;
   }
 </style>

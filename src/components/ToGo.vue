@@ -15,7 +15,7 @@
 <style scoped>
   .togo {
     background: green;
-    width: 50px;
+    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,6 +25,9 @@
     color: #fff;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
   }
 
   .togo .number {

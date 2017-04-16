@@ -14,10 +14,12 @@
 
 <style scoped>  
   table td {
-    border: 1px solid #000;
+    border: 1px solid #efefef;
     padding: 10px;
     width: 20px;
     height: 20px;
+    text-align: center;
+    font-weight: bold;
   }
 
   table td.called {

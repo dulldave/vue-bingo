@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bingo-strip">
     <bingoTicket
       v-for="(ticket, index) in tickets"
       :ticket="ticket"
@@ -22,3 +22,13 @@
     }
   }
 </script>
+
+<style>
+  .bingo-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 200px;
+    align-items: center;
+  }
+</style>
