@@ -164,7 +164,7 @@
       cursor: pointer;
     }
 
-    &[disabled="disabled"] {
+    &:disabled {
       background: #efefef;
       cursor: not-allowed;
     }
