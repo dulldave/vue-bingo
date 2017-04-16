@@ -5,7 +5,7 @@
  * @param {String} ticketString
  * @returns {Array} Returns array of tickets
  */
-export function createBingoTickets (ticketString) {
+export function parse (ticketString) {
   if (typeof ticketString !== 'string') {
     throw new Error('Ticket string must be a string')
   }

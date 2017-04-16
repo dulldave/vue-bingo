@@ -12,7 +12,7 @@
 <script>
   import BingoStrip from './components/BingoStrip'
   import Controls from './components/Controls'
-  import { createBingoTickets } from './ticketParser'
+  import { parse } from './parser'
 
   const ticketString = '011722475204365360702637497481233455758302154058881928446789061241507324334876840738576186051132437816395663800818206590104559628214294664710935667287132130687703253151692742547985'
 
@@ -71,7 +71,7 @@
      * Created is called on object initialization.
      */
     created () {
-      this.tickets = createBingoTickets(ticketString)
+      this.tickets = parse(ticketString)
     }
   }
 </script>
