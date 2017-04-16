@@ -9,8 +9,8 @@
       <tbody>
         <tr v-for="row in rows">
           <BingoTicketCell
-            v-for="(col, index) in row"
-            :col="col"
+            v-for="(cell, index) in row"
+            :cell="cell"
             :key="index">
           </BingoTicketCell>
         </tr>

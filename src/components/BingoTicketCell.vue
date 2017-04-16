@@ -1,14 +1,19 @@
 <template>
   <td 
-    v-bind:class="[col.called ? 'called' : '']">
-    <span v-if="col !== 0">{{col.number}}</span>
+    v-bind:class="[cell.called ? 'called' : '']">
+    <span v-if="cell !== 0">{{cell.number}}</span>
   </td>
 </template>
 
 <script>
   export default {
     name: 'bingoTicketCell',
-    props: ['col']
+    props: {
+      cell: {
+        type: [Object, Number],
+        required: true
+      }
+    }
   }
 </script>
 

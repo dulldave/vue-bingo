@@ -8,7 +8,12 @@
 <script>
   export default {
     name: 'toGo',
-    props: ['remaining']
+    props: {
+      remaining: {
+        type: Number,
+        required: true
+      }
+    }
   }
 </script>
 

@@ -30,7 +30,12 @@
       }
     },
 
-    props: ['tickets'],
+    props: {
+      tickets: {
+        type: Array,
+        required: true
+      }
+    },
 
     methods: {
      /**
