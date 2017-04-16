@@ -76,7 +76,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   #app {
     height: 100vh;
     display: flex;

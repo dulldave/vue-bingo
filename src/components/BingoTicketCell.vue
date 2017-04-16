@@ -12,19 +12,19 @@
   }
 </script>
 
-<style scoped>  
+<style lang="scss" scoped>
   table td {
-    border: 1px solid #efefef;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
+    border: .1rem solid #efefef;
+    padding: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
     text-align: center;
     font-weight: bold;
-  }
-
-  table td.called {
-    background: red;
-    color: #fff;
-    font-weight: bold;
+    
+    &.called {
+      background: #ff0000;
+      color: #fff;
+      font-weight: bold;
+    }
   }
 </style>

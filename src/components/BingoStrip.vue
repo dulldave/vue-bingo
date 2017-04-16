@@ -23,12 +23,12 @@
   }
 </script>
 
-<style>
+<style lang="scss" scoped>
   .bingo-strip {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-right: 200px;
+    margin-right: 12rem;
     align-items: center;
   }
 </style>

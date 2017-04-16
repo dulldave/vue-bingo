@@ -90,14 +90,14 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .bingo-ticket {
     display: flex;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     background: #fff;
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: .5rem;
+    padding: 1.5rem;
   }
 
   .winner {
@@ -107,9 +107,9 @@
     height: 100%;
     top: 0;
     left: 0;
-    border-radius: 5px;
+    border-radius: .5rem;
     color: #fff;
-    font-size: 70px;
+    font-size: 5rem;
     font-weight: bold;
     display: flex;
     justify-content: center;

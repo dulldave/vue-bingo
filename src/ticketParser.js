@@ -6,6 +6,14 @@
  * @returns {Array} Returns array of tickets
  */
 export function createBingoTickets (ticketString) {
+  if (typeof ticketString !== 'string') {
+    throw new Error('Ticket string must be a string')
+  }
+
+  if (ticketString.length !== 180) {
+    throw new Error('Ticket string must be 180 characters')
+  }
+
   const results = []
   let ticketNumbers = []
   let stringIndex = 0

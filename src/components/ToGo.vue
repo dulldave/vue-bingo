@@ -12,25 +12,24 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .togo {
-    background: green;
-    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: #008000;
+    width: 4rem;
     color: #fff;
     text-transform: uppercase;
-    color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-align: center;
-    border-radius: 5px;
-    margin-left: 10px;
-  }
-
-  .togo .number {
-    font-size: 30px;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    
+    .number {
+      font-size: 2rem;
+    }
   }
 </style>

@@ -129,12 +129,8 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .controls {
-    width: 200px;
-    height: 200px;
-    margin-left: 20px;
-    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,31 +140,33 @@
     right: 0;
     bottom: 0;
     height: 100%;
+    width: 12rem;
+    background: #fff;
   }
 
   .number-called {
-    font-size: 90px;
+    font-size: 7rem;
     font-weight: bold;
   }
 
   .btn {
     border: none;
     background: #008000;
-    padding: 18px;
+    padding: 1rem;
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: 5px;
-    letter-spacing: -1px;
-  }
+    border-radius: .5rem;
+    letter-spacing: -.1rem;
 
-  .btn:hover {
-    cursor: pointer;
-  }
+    &:hover {
+      cursor: pointer;
+    }
 
-  .btn[disabled="disabled"] {
-    background: #efefef;
-    cursor: not-allowed;
+    &[disabled="disabled"] {
+      background: #efefef;
+      cursor: not-allowed;
+    }
   }
 </style>
