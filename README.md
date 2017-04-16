@@ -1,6 +1,6 @@
 # vue-bingo
 
-90 Ball Bing Application. I've tested this on macOS Sierra against the latest versions Chrome, Safari and FireFox.
+90 Ball Bingo Application. I've tested this on macOS Sierra against the latest versions Chrome, Safari and FireFox.
 
 ![](https://media.giphy.com/media/xUA7bcxN0d1P2B8sz6/giphy.gif)
 
