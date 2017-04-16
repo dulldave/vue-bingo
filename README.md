@@ -1,13 +1,13 @@
 # vue-bingo
 
-![](https://media.giphy.com/media/xUA7bcxN0d1P2B8sz6/giphy.gif)
+90 Ball Bing Application. I've tested this on macOS Sierra against the latest versions Chrome, Safari and FireFox.
 
-90 Ball Bing Application.
+![](https://media.giphy.com/media/xUA7bcxN0d1P2B8sz6/giphy.gif)
 
 ## Dependencies
 
-* Vue.js is being used, along with the Vue CLI (with Vue Webpack template)
-  * The Vue CLI setup a lot of the boilerplate. Include Webpack, Karma, Mocha, Sinon, Chai.
+* Vue.js is being used, along with the Vue CLI (Using the Vue Webpack template)
+  * The Vue CLI sets up a lot of the boilerplate code. Including Webpack, Karma, Mocha, Sinon, Chai. I didn't want to spend a lot of time setting the application up from scratch.
 * The only other library pulled in was Lodash, just so I could utilise its helper functions.
 
 ## Running The Application
