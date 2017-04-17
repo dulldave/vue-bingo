@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import ToGo from '@/components/BingoTicketCell'
+import BingoTicketCell from '@/components/BingoTicketCell'
 
 describe('BingoTicketCell.vue', () => {
   describe('rendering the correct number', () => {
     it('should render 99 based on the number 99 being passed in the object', () => {
-      const Constructor = Vue.extend(ToGo)
+      const Constructor = Vue.extend(BingoTicketCell)
       const vm = new Constructor({
         propsData: {
-          col: { number: 99, called: false }
+          cell: { number: 99, called: false }
         }
       }).$mount()
 
@@ -16,10 +16,10 @@ describe('BingoTicketCell.vue', () => {
     })
 
     it('should render 2 based on the number 2 being passed in the object', () => {
-      const Constructor = Vue.extend(ToGo)
+      const Constructor = Vue.extend(BingoTicketCell)
       const vm = new Constructor({
         propsData: {
-          col: { number: 2, called: false }
+          cell: { number: 2, called: false }
         }
       }).$mount()
 
@@ -28,10 +28,10 @@ describe('BingoTicketCell.vue', () => {
     })
 
     it('should render nothing based on the number 0 being passed', () => {
-      const Constructor = Vue.extend(ToGo)
+      const Constructor = Vue.extend(BingoTicketCell)
       const vm = new Constructor({
         propsData: {
-          col: 0
+          cell: 0
         }
       }).$mount()
 
@@ -41,10 +41,10 @@ describe('BingoTicketCell.vue', () => {
   })
   describe('rendering the correct class name', () => {
     it('should add the class "called" as the object passed has "called" set to true', () => {
-      const Constructor = Vue.extend(ToGo)
+      const Constructor = Vue.extend(BingoTicketCell)
       const vm = new Constructor({
         propsData: {
-          col: { number: 2, called: true }
+          cell: { number: 2, called: true }
         }
       }).$mount()
 
@@ -53,10 +53,10 @@ describe('BingoTicketCell.vue', () => {
     })
 
     it('should NOT add the class "called" as the object passed has "called" set to false', () => {
-      const Constructor = Vue.extend(ToGo)
+      const Constructor = Vue.extend(BingoTicketCell)
       const vm = new Constructor({
         propsData: {
-          col: { number: 2, called: false }
+          cell: { number: 2, called: false }
         }
       }).$mount()
 

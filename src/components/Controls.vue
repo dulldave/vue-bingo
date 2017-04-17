@@ -81,7 +81,7 @@
               this.$emit('updateCalled', found)
             }
           })
-        }, 1000)
+        }, 500)
       },
 
       /**
