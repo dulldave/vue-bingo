@@ -2,7 +2,7 @@
 
 90 Ball Bingo Application. I've tested this on macOS Sierra against the latest versions Chrome, Safari and FireFox.
 
-![](https://media.giphy.com/media/xUA7bcxN0d1P2B8sz6/giphy.gif)
+![](http://i.imgur.com/7zejeLw.gif)
 
 ## Dependencies
 
